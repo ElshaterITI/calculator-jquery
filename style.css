@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    padding-inline: 33%;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calculator .button-container {
+    display: grid;
+    width: 100%;
+    gap: 10px;
+    grid-template-areas:
+        "display display display display"
+        "one two three plus"
+        "four five six mince"
+        "seven eight nine times"
+        "AC zero equals div";
+}
+
+
+.display {
+    grid-area: display;
+    color:#2d3436;
+    background-color: #dfe6e9;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    width: 100%;    
+    min-height: 100px; 
+    overflow-y: hidden; 
+    white-space: nowrap;
+}
+
+.key {
+    font-size: 1.5rem;
+    padding: 20px;
+}
+.btn-1 {
+    grid-area: one;
+}
+
+.btn-2 {
+    grid-area: two;
+}
+
+.btn-3 {
+    grid-area: three;
+}
+
+.btn-plus {
+    grid-area: plus;
+}
+
+.btn-4 {
+    grid-area: four;
+}
+
+.btn-5 {
+    grid-area: five;
+}
+
+.btn-6 {
+    grid-area: six;
+}
+
+.btn-mince {
+    grid-area: mince;
+}
+
+.btn-7 {
+    grid-area: seven;
+}
+
+.btn-8 {
+    grid-area: eight;
+}
+
+.btn-9 {
+    grid-area: nine;
+}
+
+.btn-mult {
+    grid-area: times;
+}
+
+.btn-remove-all {
+    grid-area: AC;
+}
+
+.btn-0 {
+    grid-area: zero;
+}
+
+.btn-equal {
+    grid-area: equals;
+}
+
+.btn-div {
+    grid-area: div;
+}
